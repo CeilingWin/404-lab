@@ -1,0 +1,25 @@
+.info{
+    margin-left: 25%;
+    height: 155px;
+    width: 541px;
+    background-color: rgb(220, 224, 224);
+    border: 1px solid rgb(233, 228, 228);
+    box-shadow: 5px 5px 4px 5px #888888;
+}
+.info .image img{
+    padding: 2px;
+    float: left;
+    width: 150px;
+    height: 150px;
+}
+.info .detail{
+    float: left;
+    margin-right: 200px;
+}
+.info .detail p{
+    padding-left: 5px;
+}
+.about{
+    margin-top: 20px;
+    margin-left: 25%;
+}
