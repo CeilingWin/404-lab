@@ -1,0 +1,1 @@
+Sử dụng visual code thay thế netbean, cài MAMP cho server php và mySQL 
