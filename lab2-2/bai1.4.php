@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
     <head>
         <title>Square and Cube</title>
@@ -38,7 +37,7 @@
                     <td><select name="end">
                             <?php 
                              for ($i=0; $i<=20; $i++) {
-                                if ($$end==$i) {
+                                if ($end==$i) {
                                     print ("<option selected>$i</option>");
                                 } else {
                                     print ("<option>$i</option>");

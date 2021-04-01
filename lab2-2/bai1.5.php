@@ -88,7 +88,7 @@
             </table>
 
             <?php
-                if(array_key_exists("name", %$_GET)) {
+                if(array_key_exists("name", $_GET)) {
                     $name = $_GET["name"];
                     $day = $_GET["date"];
                     $month = $_GET["month"];
@@ -96,7 +96,7 @@
                     $hour = $_GET["hour"];
                     $minute = $_GET["minute"];
                     $seconds = $_GET["second"];
-                    print("Hi $name!>/br>");
+                    print("Hi $name!</br>");
                     print("You have choose to have an appointment on $hour:$minute:$seconds, $day/$month/$year</br>");
                     print("More information</br>");
                     if($hour >12) 

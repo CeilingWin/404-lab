@@ -1,9 +1,8 @@
-<!DOCTYPE html>
 <html>
     <head><title>Conditonal Test</title></head>
     <body>
         <?php
-        $first = $_GET["firstName"]; $middle = $_GET["middleName"]; $last = $_GET("lastName");
+        $first = $_GET["firstName"]; $middle = $_GET["middleName"]; $last = $_GET["lastName"];
         print ("Hi $first! Your full name is $last $middle $first. <br></br>");
         if ($first == $last) {
             print ("$first and $last are equal");
@@ -31,7 +30,7 @@
             printf ("Your final grade is %.lf. You got a D.", $final);
             $rate = "D";
         } elseif ($final > 39) {
-            printf ("Your final grade is %.lf. You got a E." $final);
+            printf ("Your final grade is %.lf. You got a E.", $final);
             $rate = "E";
         } elseif ($final >= 0) {
             printf ("Your final grade is %.lf. You got a F.", $final);
