@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Colors Link</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <label onmouseover="changeColorToRed()" onmouseout= changeColorToBlack(red)>RED</label>
+        <br>
+        <p id="red">This is red color</p>
+        <br>
+        <label onmouseover="changeColorToGreen()" onmouseout="changeColorToBlack(green)">GREEN</label>
+        <br>
+        <p id="green">This is green color</p>
+        <br><!-- comment -->
+        <label onmouseover="changeColorToBlue()" onmouseout="changeColorToBlack(blue)">BLUE</label>
+        <br>
+        <p id="blue">This is blue color</p>
+        <br>
+        
+        <script>
+            function changeColorToRed()
+            {
+               document.getElementById("red").style.color="red";
+            }
+            function changeColorToGreen()
+            {
+               document.getElementById("green").style.color="green";
+            }
+            function changeColorToBlue()
+            {
+               document.getElementById("blue").style.color="blue";
+            }
+            function changeColorToBlack(id)
+            {
+               id.style.color="black";
+            }
+        </script>
+    </body>
+</html>
