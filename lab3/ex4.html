@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Ex 4</title>
+        <script type="text/javascript">
+            var validateInput = ()=>{
+                var name = document.getElementById("myForm").name.value;
+                var telephone = document.getElementById("myForm").telephone.value;
+                var email = document.getElementById("myForm").email.value;
+                var rgName = /^[a-zA-Z0-9]+([._]?[a-zA-Z0-9]+)*$/;
+                var rgTelephone = /\(?([0-9]{3})\)?([ .-]?)([0-9]{3})\2([0-9]{4})/;
+                var rgEmail = /^[a-z][a-z0-9_\.]{5,32}@[a-z0-9]{2,}(\.[a-z0-9]{2,4}){1,2}$/;
+                if (rgName.test(name) && rgTelephone.test(telephone) && rgEmail.test(email)){
+                    alert("valid input");
+                } else {
+                    alert("invalid input");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form id="myForm">
+            Name: <input type="text" name="name"><br>
+            Telephone: <input type="text" name="telephone"><br>
+            Email: <input type="text" name="email"><br>
+            <input type="button" value="submit" onClick="validateInput()">
+        </form>
+    </body>
+</html>
