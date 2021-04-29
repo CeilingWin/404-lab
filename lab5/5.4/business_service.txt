@@ -1,0 +1,23 @@
+CREATE TABLE 'demo_sql'.'Businesses' ( 
+'BusinessID' INT(100) NOT NULL , 
+'Name' INT(100) NOT NULL , 
+'Address' INT(100) NOT NULL , 
+'City' INT(100) NOT NULL , 
+'Telephone' INT(100) NOT NULL , 
+'URl' INT(100) NOT NULL , 
+PRIMARY KEY (`BusinessID`)) ENGINE = InnoDB;
+
+CREATE TABLE 'demo_sql'.'Biz_Categories' ( 
+'BusinessID' INT(100) NOT NULL , 
+'CategoryID' INT(100) NOT NULL , 
+PRIMARY KEY ('BusinessID', 'CategoryID') ,
+FOREIGN KEY (BusinessID) REFERENCES Businesses(BusinessID) ,
+FOREIGN KEY (CategoryID) REFERENCES Categories(CategoryID) ,
+) ENGINE = InnoDB;
+
+CREATE TABLE 'demo_sql'.'Categories' ( 
+'CategoryID' INT(100) NOT NULL , 
+'Title' VARCHAR(100) NOT NULL , 
+'Description' TEXT NOT NULL , 
+PRIMARY KEY (`CategoryID'),
+) ENGINE = InnoDB;
