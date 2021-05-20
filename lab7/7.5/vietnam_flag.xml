@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg xmlns="http://www.w3.org/2000/svg"
+
+height="320" width="480">
+  <polygon points="0,0 480,0 480,320 0,320"
+  style="fill:red"/>  
+  
+  <polygon points="240,70 180,258 330,138 150,138 300,258"
+  style="fill:yellow; stroke:yellow; stroke-width:5; fill-rule:nonzero;" />
+
+</svg>
